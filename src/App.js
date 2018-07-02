@@ -4,7 +4,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h1>BRO, SAMO DA JAVIM DA SMO LIVE! SOKO ZOVE ORLA</h1>
+        <h1>BRO, SAMO DA JAVIM DA SMO LIVE! SOKO ZOVE ORLA ALI ORAO PAO!</h1>
       </div>
     );
   }
