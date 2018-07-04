@@ -8,6 +8,7 @@ class Login extends Component {
     this.handleChange = this.handleChange.bind(this);
     this.login = this.login.bind(this);
     this.signup = this.signup.bind(this);
+
     this.state = {
       email: "",
       password: ""
@@ -25,7 +26,7 @@ class Login extends Component {
       .signInWithEmailAndPassword(this.state.email, this.state.password)
       .then(u => {})
       .catch(error => {
-        console.log(error);
+        // console.log(error.message);
       });
   }
 
