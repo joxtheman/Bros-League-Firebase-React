@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Button, Form, Segment } from "semantic-ui-react";
 
-class SignUp extends Component {
+class Sign extends Component {
   render() {
     return (
       <div className="main">
@@ -45,4 +45,4 @@ class SignUp extends Component {
   }
 }
 
-export default SignUp;
+export default Sign;

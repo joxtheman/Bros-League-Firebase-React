@@ -12,7 +12,7 @@ import {
 // import Dashboard from "./components/Dashboard";
 import Navigation from "./components/Navigation";
 import Login from "./components/Login";
-import SignUp from "./components/SignUp";
+import Sign from "./components/Sign";
 import Home from "./components/Home";
 import fire from "./config/Fire";
 import "./css/index.css";
@@ -49,7 +49,7 @@ class App extends Component {
             <Navigation />
             <Route exact path="/home" component={Home} />
             <Route exact path="/portal" component={Login} />
-            <Route exact path="/signup" component={SignUp} />
+            <Route exact path="/signup" component={Sign} />
           </div>
         </div>
       </Router>
