@@ -7,9 +7,9 @@ import {
   Redirect
 } from "react-router-dom";
 // import { browserHistory } from "react-router";
-import SignUpForm from "./components/SignUpForm";
-import SignInForm from "./components/SignInForm";
-import Dashboard from "./components/Dashboard";
+// import SignUpForm from "./components/SignUpForm";
+// import SignInForm from "./components/SignInForm";
+// import Dashboard from "./components/Dashboard";
 import Navigation from "./components/Navigation";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
