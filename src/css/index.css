@@ -9,7 +9,7 @@ html {
 
 body {
   font-family: "RobotoThin", sans-serif;
-  background: url("../img/4.jpg") no-repeat center center fixed;
+  /* background: url("../img/4.jpg") no-repeat center center fixed; */
   background-size: cover;
   color: white;
 }
