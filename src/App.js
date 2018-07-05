@@ -6,11 +6,16 @@ import {
   NavLink,
   Redirect
 } from "react-router-dom";
+// import { browserHistory } from "react-router";
 import SignUpForm from "./components/SignUpForm";
 import SignInForm from "./components/SignInForm";
 import Dashboard from "./components/Dashboard";
+import Navigation from "./components/Navigation";
+import Login from "./components/Login";
+import SignUp from "./components/SignUp";
+import Home from "./components/Home";
 import fire from "./config/Fire";
-import "./App.css";
+import "./css/index.css";
 
 class App extends Component {
   constructor(props) {
@@ -40,58 +45,11 @@ class App extends Component {
     return (
       <Router basename="/">
         <div className="App">
-          <div className="App__Aside">
-            <div className="title">
-              {" "}
-              <h1>
-                <strong>BROES LEAGUE</strong>
-              </h1>
-            </div>
-          </div>
-          <div className="App__Form">
-            <div className="PageSwitcher">
-              <NavLink
-                exact
-                to="/"
-                activeClassName="PageSwitcher__Item--Active"
-                className="PageSwitcher__Item"
-              >
-                Sign In
-              </NavLink>
-              <NavLink
-                exact
-                to="/sign-up"
-                activeClassName="PageSwitcher__Item--Active"
-                className="PageSwitcher__Item"
-              >
-                Sign Up
-              </NavLink>
-            </div>
-
-            <div className="FormTitle">
-              <NavLink
-                exact
-                to="/"
-                activeClassName="FormTitle__Link--Active"
-                className="FormTitle__Link"
-              >
-                Sign In
-              </NavLink>{" "}
-              or{" "}
-              <NavLink
-                exact
-                to="/sign-up"
-                activeClassName="FormTitle__Link--Active"
-                className="FormTitle__Link"
-              >
-                Sign Up
-              </NavLink>
-            </div>
-
-            <div>
-              <Route exact path="/sign-up" component={SignUpForm} />
-              <Route exact path="/" component={SignInForm} />
-            </div>
+          <div>
+            <Navigation />
+            <Route exact path="/home" component={Home} />
+            <Route exact path="/portal" component={Login} />
+            <Route exact path="/signup" component={SignUp} />
           </div>
         </div>
       </Router>

@@ -4,11 +4,15 @@
   "private": true,
   "dependencies": {
     "firebase": "^5.2.0",
+    "history": "^4.7.2",
     "image-webpack-loader": "^4.3.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-router": "^3.0.5",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "semantic-ui-css": "^2.3.2",
+    "semantic-ui-react": "^0.81.3"
   },
   "scripts": {
     "start": "webpack-dev-server --mode development --hot",

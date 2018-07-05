@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Gothic";
+  src: url("../fonts/Elementary_Gothic_Bookhand.ttf");
+}
+
+.homeIntro {
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: 100px;
+
+  -webkit-box-shadow: 17px -11px 20px 16px rgba(0, 0, 0, 0.56);
+  -moz-box-shadow: 17px -11px 20px 16px rgba(0, 0, 0, 0.56);
+  box-shadow: 17px -11px 20px 16px rgba(0, 0, 0, 0.56);
+}
+
+.homeIntro p {
+  padding: 5px;
+  margin: 5px;
+  font-size: 2rem;
+}
+
+.homeIntro span {
+  color: #2acb44;
+  font-weight: 700;
+  font-family: "Gothic", sans-serif;
+}
+
+.doYouDare {
+  margin: 40px;
+}
