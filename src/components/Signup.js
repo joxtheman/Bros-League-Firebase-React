@@ -7,7 +7,7 @@ class SignUp extends Component {
     return (
       <div className="main">
         <div className="login">
-          <h1>Sign Up</h1>
+          <h1>SignUp</h1>
           <Form>
             <Form.Field>
               <label>Name</label>
