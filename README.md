@@ -1,3 +1,3 @@
 It is a React project currently in development mode.
-Challenge your friends by making new leagues from existing soccer tournaments.
-App is using Firebase for storing data. 
+It will be about challenging your friends by making new leagues from existing soccer tournaments and predict the results.
+App is using Firebase for storing data.
