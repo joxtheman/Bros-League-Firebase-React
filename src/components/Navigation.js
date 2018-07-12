@@ -8,7 +8,6 @@ import {
   NavLink,
   withRouter
 } from "react-router-dom";
-import { browserHistory } from "react-router";
 
 class Navigation extends Component {
   constructor(props) {
@@ -17,52 +16,38 @@ class Navigation extends Component {
       activeItem: ""
     };
     this.handleItemClick = this.handleItemClick.bind(this);
-    // this.redirect = this.redirect.bind(this);
+    
   }
 
-  //   redirect(to) {
-  //     browserHistory.push(to);
-  //   }
-
+ 
   handleItemClick(e, { name }) {
     this.setState({ activeItem: name });
-    browserHistory.push("/" + name);
   }
 
   render() {
     const { activeItem } = this.state;
     return (
-      //   <BrowserRouter>
       <Segment inverted>
         <Menu inverted secondary>
-          <Link to="/home">
             <Menu.Item
               className="span"
               name="home"
               active={activeItem === "home"}
               onClick={this.handleItemClick}
             />
-          </Link>
-
-          <Link to="/portal">
             <Menu.Item
               className="span"
               name="portal"
               active={activeItem === "portal"}
               onClick={this.handleItemClick}
             />
-          </Link>
-          <Link to="/signup">
             <Menu.Item
               className="span"
               name="signup"
               active={activeItem === "signup"}
               onClick={this.handleItemClick}
-            />
-          </Link>
+            />  
         </Menu>
-      </Segment>
-      //   </BrowserRouter>
     );
   }
 }
